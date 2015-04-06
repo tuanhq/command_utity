@@ -1,0 +1,9 @@
+Xoá bản dịch cũ: mvn clean
+Biên dịch, không test: mvn compile
+Biên dịch lại hoàn toàn, không test: mvn clean compile
+Dịch, test, đóng gói jar: mvn package
+Dịch lại hoàn toàn, test, đóng gói jar: mvn clean package
+Dịch lại hoàn toàn, không test, đóng gói jar: mvn clean package -DskipTests=true
+mvn clean install -DskipTests
+## fetch all souce and java doc
+mvn eclipse:eclipse -DdownloadSources=true  -DdownloadJavadocs=true

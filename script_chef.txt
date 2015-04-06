@@ -1,0 +1,10 @@
+download book 
+knife cookbook site download learn_chef_apache2
+
+upload role 
+
+knife role from file path/to/role/file
+
+
+"recipe[learn_chef_apache2]"
+"recipe[nginx]"

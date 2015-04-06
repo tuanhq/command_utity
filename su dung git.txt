@@ -1,0 +1,9 @@
+Một số lệnh của git
+##list all tag
+git tag -l
+##check out 1 tag
+git checkout -b v0.7.0
+git add file /* de add file */
+git commit -m "comment" /* de add commit*/
+git push origin master /*de push git to online */
+

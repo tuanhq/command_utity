@@ -1,0 +1,123 @@
+Ðây là chương trình Anh Ngữ sinh động bài 332. Phạm Văn xin kính chào quí vị thính giả.
+ 
+Ðể thay đổi chủ đề bài học, hôm nay xin giới thiệu với quí vị một áng văn hùng hồn trong lịch sử Hoa Kỳ, Gettysburg Address. Ngày 19 tháng 11 năm nay cũng là ngày kỷ niệm 150 năm của bài diễn văn này. Vào ngày 19 tháng 11 năm 1863, tổng thống Abraham Lincoln, vị tổng thống thứ 16 của Hợp Chúng Quốc Hoa Kỳ được mời tới đọc vài lời khánh thành bãi chiến trường Gettysburg thuộc tiểu bang Pennsylvania, nơi cách đó 4 tháng rưỡi, trong ba ngày July 1 - 3, năm 1863, đã xảy ra một trận chiến thư hùng giữa phe miền Bắc (Union) và miền Nam (Confederacy), trong đó quân miền Bắc thắng nhưng cả hai bên vừa chết vừa bị thương đến 50 ngàn binh sĩ.
+ 
+Tổng thống Lincoln được mời để ban vài lời (“give a few appropriate remarks”) trong lễ dành một phần đất của bãi chiến trường khốc liệt trong cuộc nội chiến Hoa Kỳ làm Nghĩa trang quân đội. Diễn giả đầu và chính của buổi lễ là giáo sư Edward Everett, giáo sư và viện trưởng đại học Harvard, một nhà hùng biện và ngoại giao, là người đọc bài diễn văn chính oration trong gần 2 tiếng đồng hồ. Ngay sau khi ông Everett đọc xong thì đến lượt Tổng Thống Lincoln.
+
+Bài diễn văn 272 chữ vỏn vẹn 10 dòng của Tổng Thống Lincoln quá ngắn khiến người thợ chụp hình thời đó chỉ kịp xếp ống ảnh, chưa kịp chụp thì tổng thống đã nói xong. Ông quay lại nói với người hộ vệ ngồi cạnh “That speech won’t scour” (Bài diễn văn này hỏng). Nhưng ông không ngờ, chính diễn giả Everett hôm sau gửi thư cho TT Lincoln viết rằng:  (Oxford Guide to United States Government)  
+
+“I should be glad, if I could flatter myself that I came as near to the central idea of the occasion, in two hours, as you did in two minutes.” “Tôi sẽ hài lòng nếu tôi có thể tự hãnh diện rằng mình đến gần ý chính của buổi lễ, trong hai tiếng đồng hồ, như ngài đã đạt được trong hai phút.”
+ 
+Gettysburg address nay trở thành một trong những áng hùng văn nổi tiếng trong lịch sử Hoa kỳ.  
+ 
+Tại sao bài diễn văn quan trọng?
+ 
+--Ðối với người Mỹ lúc đó, cuộc Nội chiến đã kéo dài hai năm trong 4 năm với mối đe doạ có thể tách làm hai xứ mà nguyên do chính là vấn đề người nô lệ da đen được coi như tài sản trong những tiểu bang trồng bông và thuốc lá ở miền Nam.
+
+Tổng Thống Lincoln khai triển ý tưởng mọi người sinh ra đều bình đẳng “all men are created equal” bao gồm trong ý tưởng đó cả những người nô lệ da đen. Ông nới rộng thêm ý tưởng công bằng equality trong Emancipation Proclamation (Tuyên Ngôn Giải Phóng người nô lệ da đen ờ miền Nam và cho họ gia nhập quân đội có lương miền Bắc) ban ra tháng giêng năm 1863.
+
+Ý niệm equality không nằm trong Hiến Pháp Hoa Kỳ Constitution of the United States, tuy rằng có đề cập đến trong câu thứ hai của bản Tuyên Ngôn Ðộc Lập Declaration of Independence (“We hold these truths to be self-evident, that all men are created equal...”) nhưng bản Tuyên ngôn không phải là một đạo luật.
+ 
+--TT Lincoln ví chính thể dân chủ ở Hoa Kỳ năm 1776 như sự ra đời của một hài nhi. Ðiều này có ý nghĩa đối với cả các những chính thể trên thế giới. Chính thể dân chủ ở Mỹ lúc đó còn khá non nớt: mới được 87 năm, và coi như một thí nghiệm. Trận nội chiến là một thử thách chính thể đó có tồn tại không. Cũng định nghĩa ngắn gọn thế nào là một chính phủ dân chủ: government of the people, by the people, for the people.   
+ 
+1. Four score and seven years ago. [Score=hai mươi năm. Chữ score dùng trong Kinh Thánh. Cách đây 87 năm (năm lập quốc 1776 + 87 =1863, năm TT Lincoln  đọc diễn văn)], our fathers brought forth from this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+ 
+Cách đây 87 năm, ông cha ta đã khai sinh trên lục địa này một tân quốc gia, thai nghén trong Tự do và cung  hiến cho niềm xác tín rằng mọi người sinh ra đều bình đẳng .
+ 
+To bring forth=to give birth to, sinh ra dây là một ẩn dụ: so sánh một tân quốc gia như một sự ra đời của một hài nhi.
+To dedicate: cống hiến, dâng hiến, khánh thành
+To conceive: thụ thai, thai nghén, hình thành một ý niệm. Tân quốc gia Hoa Kỳ ví như được thai nghén trong Tự Do.   
+To create=tạo thành. Creator=đấng tạo hoá, Thượng Ðế.
+Equal=bình đẳng
+Proposition=một đề nghị, một điều xác tín, một định đề, một niềm tin.
+ 
+2. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a  great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.
+ 
+Engage=tham gia vào, lâm vào.
+Civil war=trận nội chiến Hoa Kỳ (1861-1865)
+Testing=thử thách
+Endure=tồn tại, chịu đựng,
+Final resting place=nơi an nghỉ cuối cùng
+Altogether=hoàn toàn, completely
+Fitting=thích hợp
+Proper=thích đáng
+Who here gave their lives that that nation might live: Chữ that thứ nhất so that, chữ that thứ nhì
+demonstrative adjective. Dùng chữ that thứ nhì với nghĩa “đó” hay “ấy"  khiến chữ “nation” khách quan hơn, the use of that makes the word nation more objective, bringing the speaker away from the word nation to allow him a deliberately objective distance.
+ 
+In a larger sense=trong một nghĩa rộng hơn
+To consecrate=hiến dâng, tôn phong,
+To hallow=thánh hóa, làm cho linh thiêng
+ 
+Giờ đây chúng ta đã lâm vào một cuộc nội chiến rộng lớn, để thử thách xem quốc gia ấy, hay bất cứ quốc gia nào được hình thành và hiến dâng như vậy, có thể tồn tại lâu dài hay không. 
+
+Chúng ta đã gặp nhau trên một bãi chiến trường lớn của cuộc chiến ấy. Chúng ta tới để cung hiến một phần đất của bãi chiến trường ấy làm nơi an nghỉ cuối cùng cho những người đã hy sinh mạng sống mình tại đây để quốc gia đó được trường tồn. Chúng ta làm vậy thực hoàn toàn hợp tình và chính đáng.   
+ 
+3. But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract.
+ 
+Nhưng, trong một nghĩa rộng hơn, chúng ta không thể cung hiến—chúng ta không thể tôn phong—chúng ta không thể thánh hóa--mảnh đất này. Những người can trường, còn sống hay đã chết, đã từng tranh đấu nơi đây, chính họ đã làm mảnh đất này linh thiêng, vượt xa quyền lực nhỏ nhoi của chúng ta có thể thêm vào hay bớt đi được.   
+ 
+Nhận xét:
+-Sự lập lại ba lần chữ cannot dedicate, cannot consecrate, cannot hallow làm tăng thêm ý nghĩa.
+ 
+-Ðiệp âm alliteration “poor power”, repetition of the consonant p. Mục đích là để hạ thấp quyền lực của người còn sống và nâng cao vinh dự của người đã hy sinh.
+ 
+4. The world will little note, nor long remember what we say here, but it can never forget what they did here.
+ 
+Thế giới sẽ chẳng ghi nhận, và cũng chẳng nhớ lâu những điều chúng ta nói nơi đây, nhưng sẽ không bao giờ quên những điều họ đã từng làm nơi đây. 
+ 
+Nhận xét: little note (chẳng ghi nhận) tương phản với long remember (nhớ lâu). Tương phản hai vế: what we say here với what they did here để cực tả ý nghĩa lời nói của người sống so sánh với hành động oai hùng của những người chết và hành động của họ mới quan trọng.
+ 
+5. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced.
+ 
+Ðúng hơn, chính chúng ta, những kẻ còn sống, mới phải hiến dâng mình ở nơi đây cho công trình còn dang dở mà những người từng chiến đấu nơi đây từ trước đến nay đã tiến tới một cách thật hào hùng. 
+ 
+Nhận xét: đoạn này kêu gọi sự quyết tâm của toàn dân, mà tiêu biểu là 20,000 ngườì đang đứng nghe cùng thân thuộc của tử sĩ và thương binh trong số cử toạ. Opposites: the living…the dead.
+The great task remaining before us…nhiệm vụ lớn lao còn dở dang ở trước mắt chúng ta.
+ 
+6. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion – that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.
+ 
+Ðúng ra chính chúng ta phải có mặt nơi đây để hiến dâng cho trọng trách còn lại đang chờ ở trước mắt—rằng trước những người chết vinh hiển này, chúng ta nguyện tận tâm hơn cho chính nghĩa mà họ đã hết lòng phục vụ đến tận hơi thở cuối cùng--rằng chúng ta long trọng quyết tâm rằng những người đã khuất sẽ không bao giờ chết uổng--rằng quốc gia này, dưới quyền năng của Thượng Ðế--sẽ nảy sinh ra một nền tự do mới—và rằng chính phủ của dân, do dân, vì dân, sẽ không bao giờ bị tiêu diệt khỏi trái đất này.
+   
+Nhận xét:
+ 
+1. Hai hình ảnh tương phản: chúng ta kẻ sống the living…và những binh sĩ bị chết trận ở đây, the honored dead.
+ 
+Increased devotion: tận tâm hơn
+The last full measure of devotion:
+tận tâm phục vụ đến tận hơi thở cuối cùng
+These dead shall not have died in vain
+Những kể đã khuất sẽ chẳng bao giờ chết uổng.
+The living…These dead: adjectives used as plural nouns.
+Have a new birth of freedom…shall not perish from the earth: tương phản giữa sự nảy sinh mới của nền tự do và động từ perish (tiêu diệt) …làm nổi bật câu nói.
+ 
+Ý niệm birth, conceived, death, perish, hallow theo   sử gia Gary Wills, trong cuốn Lincoln at Gettysburg: The Words That Remade America. New York: Simon and Schuster, 1992,  là những ý niệm trong Kinh Thánh và là ý niệm gần gũi với người dân.
+ 
+2. Ba lần lập lại khóm từ of the people, by the people, for the people. Câu văn cân bằng và nhịp nhàng. tăng phần nghiêm trang và sâu xa của ý nghĩa câu nói.
+ 
+3. Nguồn gốc câu của Lincoln: Lincoln có thể đã chịu ảnh hưởng của ít nhất hai người khi viết Gettysburg Address:
+ 
+3a- Willliam Herndon, Lincoln’s law partner, who wrote in 1888 book Abraham Lincoln: The True Story of A Great Life that he had brought to Lincoln some of the sermons of the abolitionist minister Theodore Parker of Massachusetts, and that Lincoln was moved by Parker’s use of this idea:
+ 
+“Democracy is direct self-government, over all the people, for all the people, by all the people.”
+(Dân chủ là sự tự trị trực tiếp, bao quát toàn dân, phục vụ toàn dân, do toàn thể nhân dân bầu ra.”)
+ 
+3b.- In 1830 before the United States Senate, Daniel Webster described the federal government as “the people’s government, made for the people, made by the people, and answerable to the people. (Daniel Webster (1782-1852), Second speech on Foote’s Resolution, Jan. 26, 1830).
+Chính phủ của dân, lập ra để phục vụ dân, do dân tạo ra, và phải chịu trách nhiệm đối với dân. (Daniel Webster, Diễn văn thứ nhì ở Thượng viện về nghị quyết Foote, ngày 26 tháng 1 năm 1830.)
+ 
+Chú thích:
+ 
+-Toàn bài diễn văn do tài tử Gregory Peck đọc vào ngày 4 tháng 7 năm 1986. Xin vào Google gõ hàng chữ “Lincoln’s Gettysburg address read by Gregory Peck”.
+ 
+-Hay có thể nghe tài tử Sam Waterston đọc bài diễn văn trên đài National Public Radio bằng cách gõ hàng chữ “Gettysburg address NPR”.
+ 
+-Hay có thể vào Google gõ hàng chữ “Lincoln’s Gettysburg Address As it Really Sounded” để nghe giọng Mỹ ở Kentucky là quê hương của TT Lincoln do Tom Bradley đọc.
+ 
+Nguồn:
+http://www.answers.com/topic/gettysburg-address
+ 
+Vietnamese Explanation
+ 
+Quí vị vừa học xong bài 332 về bài diễn văn của vị Tổng thống Hoa Kỳ thứ 16 Abraham Lincoln đọc tại Gettysburg ngày 19 tháng 11 năm 1863 cách đây 150 năm.
+Phạm Văn xin kính chào quí vị thính giả và xin hẹn gặp lại trong một bài học khác.
+
+

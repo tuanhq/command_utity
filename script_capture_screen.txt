@@ -1,0 +1,26 @@
+file auto chup hinh 
+#!/bin/bash
+# This generates a file
+#dir
+#file_template
+while true; do
+import -display :0.0 -window root ~/Pictures/test/img_$(date +"%s%N").jpg
+sleep 1
+done
+
+service
+
+#!/bin/bash
+case $1 in
+    start)
+       nohup /home/tuanhq/script/capture_screen.sh 2>/dev/null &
+    ;;
+    stop)
+        kill -9 $(ps aux | grep "[c]apture_screen.sh" | awk '{print $2}') 2>/dev/null
+    ;;
+    restart)
+        kill -9  $(ps aux | grep "[c]apture_screen.sh" | awk '{print $2}') 2>/dev/null
+        nohup  /home/tuanhq/script/capture_screen.sh 2>/dev/null &
+    ;;
+esac
+exit 0

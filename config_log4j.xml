@@ -1,0 +1,89 @@
+--Thứ tự các level của log4j
+OFF 	The highest possible rank and is intended to turn off logging.
+FATAL 	Severe errors that cause premature termination. Expect these to be immediately visible on a status console.
+ERROR 	Other runtime errors or unexpected conditions. Expect these to be immediately visible on a status console.
+WARN 	Use of deprecated APIs, poor use of API, 'almost' errors, other runtime situations that are undesirable or unexpected, but not necessarily "wrong". Expect these to be immediately visible on a status console.
+INFO 	Interesting runtime events (startup/shutdown). Expect these to be immediately visible on a console, so be conservative and keep to a minimum.
+DEBUG 	Detailed information on the flow through the system. Expect these to be written to logs only.
+TRACE 	Most detailed information. Expect these to be written to logs only. Since version 1.2.12
+
+P là  a.b có appender=console
+L là a.b.c có appender=file
+Giả sử L là con của P
+=>L có  appender của  L tổ tiên của L và P tổ tiên của P
+nhưng nếu P có flag additivity="false" thì L sẽ có chỉ lấy những append của nó, tổ tiên của nó gồm cả P ko lấy những append của tổ tiên P
+
+Cấu trúc của log4j bao gồm có các logger ,
+
+Các logger này nhận nhiều output (có thể ghi ra file, ghi và database ghi ra console ) Các thông số này người ta gọi là appender
+
+Các appender sẽ có những kiểu layout quy định mẫu, cách thức ghi ra output.
+
+Sau đây là cấu hình của 1 log4j
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="FATALS" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/opt/filestorage/mworldlog/regbillpack/tbl"/>
+        <param name="DatePattern" value="yyyyMMddHHmm'.txt'"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%m%n"/>
+        </layout>		
+		<!-- the filter dung de log level cần output --->
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="FATAL"/>
+            <param name="LevelMax" value="FATAL"/>
+        </filter>
+    </appender>
+    <appender name="LOGERROR" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="/opt/log4j/logerrors/log.log"/>
+        <param name="MaxFileSize" value="100KB"/>
+        <param name="MaxBackupIndex" value="100"/>
+        <param name="Threshold" value="ERROR"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%5p [%d] %C (%M:%L) - %m%n"/>
+        </layout>
+    </appender>
+	
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+			<layout class="org.apache.log4j.PatternLayout">
+				<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+			</layout>
+	</appender>
+    
+    <root>
+        <priority value="info"></priority>       
+        <appender-ref ref="ERRORS"/>
+    
+    </root>
+</log4j:configuration>
+
+
+<!--logback configuration -->
+<configuration>
+    
+  <conversionRule conversionWord="coloredLevel" converterClass="play.api.Logger$ColoredLevel" />
+  
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+     <file>/opt/log4j/logerrors/error.log</file>
+     <encoder>
+       <pattern>%date - [%level] - from %logger in %thread %n%message%n%xException%n</pattern>
+     </encoder>
+   </appender>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%coloredLevel %logger{15} - %message%n%xException{5}</pattern>
+    </encoder>
+  </appender>
+  
+  <logger name="play" level="INFO" />
+  <logger name="application" level="INFO" />
+
+  <root level="ERROR">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE" />
+  </root>
+  
+</configuration>

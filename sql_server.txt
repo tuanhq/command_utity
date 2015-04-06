@@ -1,0 +1,87 @@
+###SQL SERVER
+
+convert(
+isnull
+isnumberric
+
+--lopp
+
+while
+ while @Category_Id < 3
+	  begin 
+	   
+	  end  
+	  
+
+
+###USING CURSOR
+
+Step 1: Declare variables to hold the output from the cursor.
+
+
+DECLARE @BusinessEntityID as INT;
+DECLARE @BusinessName as NVARCHAR(50);
+
+Step 2: Declare the cursor object;
+
+	
+DECLARE @BusinessCursor as CURSOR;
+
+Step 3: Assign the query to the cursor.
+
+	
+SET @BusinessCursor = CURSOR FOR
+SELECT BusinessEntityID, Name
+ FROM Sales.Store;
+
+Step 4: Open the cursor.
+
+	
+OPEN @BusinessCursor;
+
+Step 5: Fetch the first row.
+
+	
+FETCH NEXT FROM @BusinessCursor INTO @BusinessEntityID, @BusinessName;
+
+Step 5: Loop until there are no more results.  In the loop print out the ID and the name from the result set and fetch the net row.
+
+	
+WHILE @@FETCH_STATUS = 0
+BEGIN
+ PRINT cast(@BusinessEntityID as VARCHAR (50)) + ' ' + @BusinessName;
+ FETCH NEXT FROM @BusinessCursor INTO @BusinessEntityID, @BusinessName;
+END
+
+Step 6: Close the cursor.
+
+	
+CLOSE @BusinessCursor;
+
+Step 7: Deallocate the cursor to free up any memory or open result sets.
+
+	
+DEALLOCATE @BusinessCursor;
+
+Now putting it all together:
+	
+DECLARE @BusinessEntityID as INT;
+DECLARE @BusinessName as NVARCHAR(50);
+ 
+DECLARE @BusinessCursor as CURSOR;
+ 
+SET @BusinessCursor = CURSOR FOR
+SELECT BusinessEntityID, Name
+ FROM Sales.Store;
+ 
+OPEN @BusinessCursor;
+FETCH NEXT FROM @BusinessCursor INTO @BusinessEntityID, @BusinessName;
+ 
+WHILE @@FETCH_STATUS = 0
+BEGIN
+ PRINT cast(@BusinessEntityID as VARCHAR (50)) + ' ' + @BusinessName;
+ FETCH NEXT FROM @BusinessCursor INTO @BusinessEntityID, @BusinessName;
+END
+ 
+CLOSE @BusinessCursor;
+DEALLOCATE @BusinessCursor;	  

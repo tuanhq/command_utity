@@ -1,0 +1,35 @@
+--tren ubuntu
+sudo apt-get update
+sudo apt-get upgrade
+sudo add-apt-repository ppa:guacamole/stable
+sudo apt-get install guacamole-tomcat
+apt-get install libguac-client-ssh0 libguac-client-rdp0
+ln -s /var/lib/guacamole/guacamole.war /var/lib/tomcat6/webapps
+ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat6/.guacamole/
+
+update-rc.d guacamole defaults 99
+vncserver -geometry 1280x1024
+sudo x11vnc -xkb -noxrecord -noxfixes -noxdamage -display :0 -auth /var/run/lightdm/root/:0 -usepw -geometry 1920x1080
+sudo x11vnc -xkb -noxrecord -noxfixes -noxdamage -display :0 -auth /var/run/lightdm/root/:0 -usepw -geometry 1024x768
+
+start on login-session-start
+script
+x11vnc -xkb -noxrecord -noxfixes -noxdamage -repeat -display :0 -auth /var/run/lightdm/root/:0 -forever -shared -bg -o /var/log/x11vnc.log -rfbauth /home/tuanhq/.vnc/passwd -rfbport 5900
+end script
+
+
+auto eth0
+iface eth0 inet static
+address 172.27.4.165
+netmask 255.255.255.0
+gateway 172.27.4.1
+dns-nameservers 8.8.8.8 8.8.4.4
+
+eth0      Link encap:Ethernet  HWaddr 08:00:27:53:dc:51  
+          inet addr:172.27.4.165  Bcast:172.27.4.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fe53:dc51/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:96 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:110 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:28774 (28.7 KB)  TX bytes:14222 (14.2 KB)

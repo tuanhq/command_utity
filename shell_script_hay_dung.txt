@@ -1,0 +1,82 @@
+############note command ubuntu#############
+#### list all version package ###
+apt-cache madison ten_pkg
+or 
+apt-cache showpkg ten_pkg
+
+#### Disable firewall
+
+sudo ufw disable
+
+
+###############CHAY NOHUP##############
+ 2>/dev/null &
+ NOTE VE echo run command 
+ > file redirects stdout to file
+1> file redirects stdout to file
+2> file redirects stderr to file
+&> file redirects stdout and stderr to file
+
+/dev/null is the null device it takes any input you want and throws it away. It can be used to suppress any output. 
+--kiem tra do phan giai man hinh
+ xwininfo -display 0:0 -root 
+ 
+ Với các hiển thị cục bộ trên hệ thống Linux, ủy quyền thường phụ thuộc vào một cái gọi là MIT-MAGIC-COOKIE-1, mà thường được tái tạo mỗi lần khởi động lại trình chủ X. Một người dùng có thể trích xuất mẩu cookie ma thuật từ tập tin .Xauthority trong thư mục nhà của mình bằng cách sử dụng lệnh xauth extract và cung cấp nó cho một người dùng khác để kết hợp vào tập tin .Xauthority của người dùng này bằng cách sử dụng lệnh xauth merge. Một cách khác là một người dùng có thể cấp quyền cho những người dùng khác để truy cập hệ thống cục bộ bằng cách sử dụng lệnh xhost +local:. 
+
+ find . -type f -name "*.java" -exec grep --color "PersistentVMRole" {} \; -print
+
+ //lenh netstat 
+    -t : TCP port
+    -u : UDP port
+    -l : Show only listening sockets.
+    -p : Show the PID and name of the program to which each socket / port belongs
+    -n : No DNS lookup (speed up operation)
+	
+	
+	example muon tim process running port 80  (voi ubuntu phai su dung them sudo de biet duoc pid nao dang chay)
+	sudo netstat -nlp | grep 80
+	
+	
+	Mot lenh khac cung rat hay la 
+	lsof
+	
+	
+### WHEN apt-get install error clean apt-list
+
+sudo apt-get clean 
+cd /var/lib/apt 
+sudo mv lists lists.old
+sudo rm /var/lib/apt/lists/* -vf
+sudo mkdir -p lists/partial
+sudo apt-get clean 
+sudo apt-get update
+
+
+guacamole/stable
+ sudo add-apt-repository --remove ppa:guacamole/stable
+ 
+ 
+ #### remove screen pre login in gnome 
+ gsettings set org.gnome.desktop.session idle-delay 0
+ 
+##### grep or
+grep -E 'pattern1|pattern2'
+### grep and (chu y no co phan biet thu tu  de ko phan biet thu tu thi lam giong command thu 2
+grep -E 'pattern1.*pattern2' 
+grep -E 'pattern1.*pattern2|pattern2.*pattern1' 
+
+### command copy using azcopy 
+AzCopy /Source:https://cloudats.blob.core.windows.net/vhds /Dest:https://clats.blob.core.windows.net/vhds /sourcekey:QD2j3UWdREQ4S0XXc7w6x7rTVaZcP87b7Q+swwdG4Az1EJ+5wkTGX8JoQ9uSRM5fwIe6ebxjKvZUsnb7CT5wpg== /destkey:9pzo95QKw5ERw4etn97CrofY7O/KdVNmiRMsRqQ4Fz9cIj9FAXLhln+Wtj7nQD2yTAW5zkIdrfx1DgFee4WScg== /Pattern:cats-non-ui-image-os-2015-01-28.vhd
+
+sudo sed -i -e 's/archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+
+show all network interface
+sudo lshw -C network
+
+
+snat in ubuntu
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+iptables -A FORWARD -i eth1 -j ACCEPT
+

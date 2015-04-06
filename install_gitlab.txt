@@ -1,0 +1,142 @@
+#### install gitlab
+
+wget https://downloads-packages.s3.amazonaws.com/ubuntu-14.04/gitlab_7.6.2-omnibus.5.3.0.ci-1_amd64.deb
+sudo apt-get install openssh-server
+sudo apt-get install postfix # Select 'Internet Site', using sendmail instead also works, exim has problems
+sudo dpkg -i gitlab_7.6.2-omnibus.5.3.0.ci-1_amd64.deb
+sudo gitlab-ctl reconfigure
+
+###edit /etc/gitlab/gitlab.rb
+###Remember change port 8082 gitlab
+postgresql['enable'] = true
+postgresql['port'] = 5433
+sudo gitlab-ctl reconfigure
+sudo gitlab-rake gitlab:setup
+
+#### user and pass default gitlab 
+login.........admin@local.host
+password......5iveL!fe
+pass default: git.cloudats
+
+## install chef-server
+cd ~
+wget https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef-server_11.0.10-1.ubuntu.12.04_amd64.deb
+sudo dpkg -i chef-server*
+sudo chef-server-ctl reconfigure
+
+vi /etc/chef-server/chef-server.rb
+api_fqdn 'cloud-ats.cloudapp.net'
+bookshelf['vip'] = 'cloud-ats.cloudapp.net'
+chef_server_webui['cookie_domain'] = 'cloud-ats.cloudapp.net'
+
+sudo chef-server-ctl reconfigure
+
+
+
+#################install workstation
+
+sudo apt-get update
+sudo apt-get install git
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+cd ~
+git clone https://github.com/opscode/chef-repo.git
+mkdir -p ~/chef-repo/.chef
+
+https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances
+### check to fix  self-signed certificate
+knife ssl check
+mkdir -p /home/ubuntu/chef-repo/.chef/trusted_certs
+###chu y cau lenh duoi ubuntu le name of domain(server)
+cp /var/opt/chef-server/nginx/ca/ubuntu.crt /home/ubuntu/chef-repo/.chef/trusted_certs/
+
+
+knife configure --initial
+/home/azureuser/chef-repo/.chef/knife.rb
+https://cloud-ats.cloudapp.net:443
+/home/azureuser/chef-repo/.chef/admin.pem
+/home/azureuser/chef-repo/.chef/chef-validator.pem
+/home/azureuser/chef-repo/
+cloud-ats.cloudapp.net
+/var/opt/chef-server/nginx/ca/
+chef.cloudats
+
+[https://cloud-ats.cloudapp.net:443]
+
+
+
+login.........root
+password......5iveL!fe(update git.cloudats)
+
+
+cloud-ats.cloudapp.net
+
+
+
+###Conif domain to chef-server
+
+api_fqdn 'cloud-ats.cloudapp.net'
+bookshelf['vip'] = 'cloud-ats.cloudapp.net'
+
+
+##
+vi /etc/chef-server/chef-server.rb
+api_fqdn 'cloud-ats.cloudapp.net'
+bookshelf['vip'] = 'cloud-ats.cloudapp.net'
+chef_server_webui['cookie_domain'] = 'cloud-ats.cloudapp.net'
+
+download cookbook
+
+knife cookbook site install mysql
+knife cookbook upload mysql --include-dependencies
+knife cookbook delete -p mysql --include-dependencies
+
+
+
+download book 
+knife cookbook site download learn_chef_apache2
+knife cookbook upload learn_chef_apache2
+knife cookbook site download mysqld
+knife cookbook upload mysqld
+knife cookbook site download mysql --include-dependencies
+
+
+upload role 
+
+knife role from file path/to/role/file
+
+
+"recipe[learn_chef_apache2]"
+"recipe[nginx]"
+
+
+
+port '3306'
+version '5.5'
+initial_root_password '123456'
+
+####SSH to client 
+
+##run 
+sudo chef-client
+
+
+##########
+Username = stu.azure@fsoft.com.vn
+Password = Fsu1@Cloud#2014
+#############
+knife bootstrap 10.0.0.5 -x azureuser -P "#CloudATS" -N chef-client1 --sudo --use-sudo-password --no-host-key-verify
+
+-x ubuntu -P ubuntu --sudo --use-sudo-password --no-host-key-verify -N
+cloud-ats.cloudapp.net : 61907
+"recipe[mysql]"
+
+
+Chef::Exceptions::RecipeNotFound could not find recipe server for cookbook mysql
+
+package 'mysql'
+
+service 'mysql' do
+  action [:start, :enable]
+end
+
+chef.cloudats

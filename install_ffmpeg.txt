@@ -1,0 +1,24 @@
+
+## link https://launchpad.net/~jon-severinsson/+archive/ubuntu/ffmpeg
+install ffmpeg
+
+sudo add-apt-repository ppa:jon-severinsson/ffmpeg
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install ffmpeg
+sudo ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1024x768 -i :0.0  -acodec pcm_s16le -vcodec libx264 -preset ultrafast -crf 0 -threads 0  test.flv
+sudo ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1024x768 -i :0.0  -acodec pcm_s16le -vcodec libx264 -preset ultrafast -crf 0 -threads 0  abc.flv
+
+sudo ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1024x768 -i :0.0  -acodec pcm_s16le -vcodec h263 -preset ultrafast -crf 0 -threads 0  abc.flv
+ffmpeg -f x11grab -r 30 -vcodec libx264 -s 1024x768 -i :0.0 -preset ultrafast -crf 0 -threads 0  test4.flv
+
+sudo ffmpeg -f x11grab -r 30 -s 1024x768 -i :0.0 -vcodec libx264 -preset ultrafast -crf 0 -threads 0  test11.flv
+sudo ffmpeg -f x11grab -r 30 -s 1024x768 -i :0.0 -vcodec libx264 -preset ultrafast -b 5k -crf 0 -threads 0 -t 60 test12.flv
+sudo ffmpeg -f x11grab -r 15 -s 1024x768 -i :0.0 -vcodec libx264 -preset ultrafast -b:v 200k -qscale 1 -t 60 test16.flv
+-vpre
+-qscale 1 
+
+sudo ffmpeg -f x11grab -r 15 -s 1024x768 -i :0.0 -vcodec libx264 -preset ultrafast -b:v 300k -qscale 2 -t 60 test18.flv
+
+dshow 
