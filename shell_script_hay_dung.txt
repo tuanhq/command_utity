@@ -79,4 +79,9 @@ snat in ubuntu
 echo 1 > /proc/sys/net/ipv4/ip_forward
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 iptables -A FORWARD -i eth1 -j ACCEPT
+### to add shell script to chkconfig nedd add some comment below 
 
+#!/bin/bash
+# chkconfig: 2345 95 20
+# description: This application was developed by me and is tested on this server
+# processname: my_app
