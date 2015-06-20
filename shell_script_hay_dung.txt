@@ -85,3 +85,7 @@ iptables -A FORWARD -i eth1 -j ACCEPT
 # chkconfig: 2345 95 20
 # description: This application was developed by me and is tested on this server
 # processname: my_app
+
+
+### run nohup
+nohup command_name-Or-Script-name > Output.out 2> Error.err < /dev/null &
